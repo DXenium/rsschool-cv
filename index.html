@@ -64,41 +64,110 @@
             <h2 class="section-title">
                 Summary
             </h2>
+            <p>
+                I am a front-end developer. I think programming is ongoin fun process, that develops skills
+                exponentially.
+                In addition to my technical skills, I bring along professional work experience in off-line and on-line
+                projects.
+                I am looking forward to working in teams as well as individually.
+                I am not only willing to deepen my knowledge but I also want to apply them to the real products.
+            </p>
         </section>
         <section class="section" id="skills">
             <h2 class="section-title">
                 Skills
             </h2>
+            <ul>
+                <li>Web-development: HTML5, CSS3, JavaScript</li>
+                <li>Version control: GIT, Github</li>
+                <li>Graphics: Figma</li>
+            </ul>
         </section>
         <section class="section" id="code">
             <h2 class="section-title">
                 Code
             </h2>
+            <p>
+            <pre>
+                    <code>
+const modalBtn = document.querySelector('.more')
+const modalWindow = document.querySelector('.modal')
+    
+modalBtn.addEventListener('click', () => {
+modalWindow.classList.remove('hidden')
+})
+    
+modalWindow.addEventListener('click', (event) => {
+const target = event.target
+    
+if (target.classList.contains('overlay') || target.classList.contains('modal__close')) {
+modalWindow.classList.add('hidden')
+}
+})  
+                    </code>
+                </pre>
+            </p>
         </section>
         <section class="section" id="courses">
             <h2 class="section-title">
                 Courses
             </h2>
+            <ul>
+                <li>Netology: HTML&CSS basic</li>
+                <li>GetCourse: landing page by Getcourse</li>
+                <li>Copywrighting: LiT, EPB by Katerina Yashina</li>
+            </ul>
         </section>
         <section class="section" id="projects">
             <h2 class="section-title">
                 Projects
             </h2>
+            <ul>
+                <li>
+                    <a href="https://dxenium.github.io/Movea_glo_academy_intensive/">Online movie theater</a>
+                </li>
+                <li>
+                    <a href="https://dxenium.github.io/Glo_Anime/">Anime platform</a>
+                </li>
+                <li>
+                    <a href="https://dxenium.github.io/Glo-intensive/">Promo page</a>
+                </li>
+            </ul>
         </section>
         <section class="section" id="education">
             <h2 class="section-title">
                 Education
             </h2>
+            Siberian University of Telecommunication and Informatic
         </section>
         <section class="section" id="languages">
             <h2 class="section-title">
                 Languages
             </h2>
+            <p>A2 - Pre-Intermediate</p>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container"></div>
+        <div class="container">
+            <div class="footer-copyright">
+                <p>
+                    © 2023 by Kseniya Dudak
+                </p>
+            </div>
+            <ul>
+                <li>
+                    <a href="https://github.com/DXenium" class="footer-link">
+                        Github DXenium
+                    </a>
+                </li>
+                <li>
+                    <a href="https://rs.school/js/" class="footer-link">
+                        <img src="assets/icons/rs_school_js.svg" alt="rss_logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
 </body>
