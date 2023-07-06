@@ -50,10 +50,32 @@ body{
     margin: 0 auto;
   }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #383638;
+    padding: 15px 30px;
+    position: fixed;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.header-link-logo {
+    width: 10%;
+}
+.header-logo {
+    max-width: 55px;
+
+    background-color: white;
+    padding: 7px;
+}
 .nav-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 0;
 
     list-style: none;
   }
@@ -66,29 +88,111 @@ body{
   }
 
   .nav-item a {
-    color: #829985;
+    color: #fdfdfd;
     text-decoration: none;  
     transition: color 0.5s;
   }
   .nav-item a:hover {
-    color: #4d2323;
+    color: #909090;
   }
 
   .main-container {
     display: flex;
     flex-wrap: wrap;
+    padding: 95px 0 0;
   }
   
   .section {
     width: 50%;
+    border-bottom: 5px solid #606771;
   }
 
   .section-title {
+    font-family: 'Tinos', sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 5px;
-    color: #829985;
+    color: #383638;
+  }
+
+  .section-link,
+  .footer-link {
+      color: #383638;
+      text-decoration: none;
+      border-bottom: 1px solid #383638;
+      transition: .3s;
+  }
+
+  .section-link:hover,
+  .footer-link:hover {
+      color: #000;
+      border-bottom: none;
+  }
+
+  .section-list {
+      list-style: none;
+      padding-left: 0;
+  }
+
+  .section-item {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .section-item::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    border-width: 3px;
+    border-radius: 100px;
+    background-color: #fdfdfd;
+    background-position: center center;
+    border-color: #383638;
+    border-style: solid;
+  }
+
+  .profile-photo{
+    display: flex;
+    justify-content: center;
+
+    padding: 30px;
+
+  }
+  .cv-photo {
+      max-width: 40%;
+  }
+
+  .profile-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #606771;
+    color: #fff;
+  }
+
+  .profile-title{
+      color:#fdfdfd;
+      font-size: 48px;
+      margin: 0;
+  }
+
+  .profile-desc {
+      margin: 0;
+  }
+
+  .section-code{
+      padding-bottom: 20px;
+  }
+
+  .cv-footer-logo {
+      width: 100px;
   }
 
   @media (max-width: 768px) {
