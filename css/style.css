@@ -83,21 +83,14 @@ body{
 .nav-link {
     padding: 0 20px;
     line-height: 50px;
-
-    transition: .3s;
-  }
-
-  .nav-item a {
     color: #fdfdfd;
     text-decoration: none;  
-    transition: color 0.5s;
+    transition: all 0.5s;
   }
-  .nav-item a:hover {
+
+.nav-link:hover {
     color: #909090;
-   text-decoration: underline;
-  }
-  .nav-item a:hover {
-    color: #909090;
+    text-decoration: underline;
   }
 
   .main-container {
