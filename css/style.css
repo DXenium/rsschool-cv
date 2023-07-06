@@ -86,12 +86,34 @@ body{
     color: #fdfdfd;
     text-decoration: none;  
     transition: all 0.5s;
+    position: relative;
   }
+  .nav-link:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px; /* Высота линии */
+    background-color: #383638; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
 
 .nav-link:hover {
     color: #909090;
-    text-decoration: underline;
   }
+  .nav-link:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px; /* Высота линии */
+    background-color: #909090; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /*Время эффекта*/
+}
 
   .main-container {
     display: flex;
