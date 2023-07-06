@@ -94,6 +94,10 @@ body{
   }
   .nav-item a:hover {
     color: #909090;
+   text-decoration: underline;
+  }
+  .nav-item a:hover {
+    color: #909090;
   }
 
   .main-container {
@@ -116,8 +120,7 @@ body{
     color: #383638;
   }
 
-  .section-link,
-  .footer-link {
+  .section-link{
       color: #383638;
       text-decoration: none;
       border-bottom: 1px solid #383638;
@@ -155,6 +158,75 @@ body{
     border-color: #383638;
     border-style: solid;
   }
+  .contacts-item{
+      position: relative;
+      padding-left: 30px;
+  }
+  .contacts-item:first-child:before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../assets/icons/home.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .contacts-item:nth-child(2):before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../assets/icons/envelope-open.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .contacts-item:nth-child(3):before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../assets/icons/github.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .contacts-item:nth-child(4):before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../assets/icons/telegram.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .contacts-item:nth-child(5):before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../assets/icons/discord.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
 
   .profile-photo{
     display: flex;
@@ -190,9 +262,40 @@ body{
   .section-code{
       padding-bottom: 20px;
   }
+  .section-education,
+  .section-languages {
+      border-bottom: none;
+  }
 
-  .cv-footer-logo {
+  .footer {
+      display:flex;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #383638;
+      color: #fdfdfd;
+  }
+  .footer-item {
+      width: 33.33%;
+      padding: 15px;
+      text-align: center;
+  }
+  .footer-link {
+    color: #fdfdfd;
+    text-decoration: none;
+    border-bottom: 1px solid #fdfdfd;
+    transition: .3s;
+}
+
+  .footer-copy {
+      text-align: left;
+  }
+  .footer-item:last-child{
+    text-align: end;
+}
+
+  .footer-logo {
       width: 100px;
+      background-color: #fdfdfd;
   }
 
   @media (max-width: 768px) {
