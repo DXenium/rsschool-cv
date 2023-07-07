@@ -56,10 +56,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #383638;
     padding: 15px 30px;
     position: fixed;
-    width: calc(100% - 30px);
+    width: 100%;
     box-sizing: border-box;
     z-index: 1000;
 }
@@ -77,6 +78,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0;
 
     list-style: none;
@@ -318,7 +320,6 @@ body{
   .color-text{
     color: #383638;
   }
-
   @media (max-width: 768px) {
     .section {
       width: 100%;
