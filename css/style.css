@@ -313,6 +313,10 @@ body{
       background-color: #fdfdfd;
   }
 
+  .color-text{
+    color: #383638;
+  }
+
   @media (max-width: 768px) {
     .section {
       width: 100%;
