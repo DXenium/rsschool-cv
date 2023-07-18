@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,6 @@
 
 <body>
     <div class="container" id="top">
-
 
         <header class="header">
             <div class="container header-container">
@@ -38,7 +37,7 @@
         <main class="main">
             <div class="container main-container">
                 <section class="section" id="profile">
-                    <h2 class="hidden">Фото</h2>
+                    <h2 class="hidden">Photo</h2>
                     <div class="profile-photo">
                         <img src="assets/img/IMG_6219.JPG" alt="Dudak_Kseniya_photo" class="cv-photo">
                     </div>
@@ -62,10 +61,13 @@
                             Github: <a class="section-link" href="https://github.com/DXenium">DXenium</a>
                         </li>
                         <li class="contacts-item">
-                            Telegram: @dudak_xen
+                            Telegram: <a class="section-link" href="https://t.me/@dudak_xen">@dudak_xen</a>
                         </li>
                         <li class="contacts-item">
-                            Discord: Kseniya Dudak#4259
+                            Discord: <a class="section-link"
+                                href="https://discordapp.com/users/1127538409280376868">Kseniya
+                                Dudak#4259</a>
+
                         </li>
                     </ul>
                 </section>
@@ -98,24 +100,21 @@
                     <h2 class="section-title">
                         Code
                     </h2>
-                    <code>
-const modalBtn = document.querySelector('.more')
-const modalWindow = document.querySelector('.modal')
+                    <pre><code>const modalBtn = document.querySelector('.more');
+const modalWindow = document.querySelector('.modal');
     
 modalBtn.addEventListener('click', () => {
-modalWindow.classList.remove('hidden')
+    modalWindow.classList.remove('hidden');
 })
     
 modalWindow.addEventListener('click', (event) => {
-const target = event.target
+    const target = event.target;
     
-if (target.classList.contains('overlay') || 
-target.classList.contains('modal__close')) {
-modalWindow.classList.add('hidden')
-}
-})  
-
-                    </code>
+    if (target.classList.contains('overlay') || 
+        target.classList.contains('modal__close')) {
+            modalWindow.classList.add('hidden');
+        }
+})</code></pre>
                 </section>
                 <section class="section" id="courses">
                     <h2 class="section-title">
@@ -156,7 +155,7 @@ modalWindow.classList.add('hidden')
                     <h2 class="section-title">
                         Languages
                     </h2>
-                    <p>A2 - Pre-Intermediate</p>
+                    <p>English: A2 - Pre-Intermediate</p>
                 </section>
             </div>
         </main>
